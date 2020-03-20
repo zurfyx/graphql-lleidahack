@@ -1,0 +1,8 @@
+.note {
+  padding: 16px;
+  border: 1px solid black;
+}
+
+.strike {
+  text-decoration: line-through;
+}

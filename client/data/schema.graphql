@@ -1,0 +1,25 @@
+type Query {
+  note(id: String): Note
+  notes: [Note]
+}
+type Note {
+  id: ID
+  title: String
+  body: String
+  checklists: [Checklist]
+}
+type Checklist {
+  body: String
+  isChecked: Boolean
+}
+input ChecklistInput {
+  body: String
+}
+type Mutation {
+  createNote(title: String!, body: String, checklists: [ChecklistInput]): Note
+  toggleComplete(id: ID, checklistBodies: [String!]!): Note
+}
+schema {
+  query: Query
+  mutation: Mutation
+}
