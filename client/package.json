@@ -10,7 +10,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-relay": "^9.0.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "5.0.1",
     "relay-compiler": "^9.0.0",
     "relay-hooks": "^3.2.0",
     "watchman": "^1.0.0"
